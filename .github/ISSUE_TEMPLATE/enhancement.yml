@@ -1,0 +1,52 @@
+name: "개선 제안"
+description: "기존 기능의 개선을 제안합니다"
+title: "[개선] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 개선 제안
+        기존 기능을 더 좋게 만들 아이디어를 공유해주세요.
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: "개선 영역"
+      description: "어떤 영역을 개선하고 싶으신가요?"
+      options:
+        - "UI/UX"
+        - "성능"
+        - "접근성"
+        - "코드 구조"
+        - "기타"
+    validations:
+      required: true
+
+  - type: textarea
+    id: current
+    attributes:
+      label: "현재 상황"
+      description: "지금은 어떻게 동작하나요?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: "개선 제안"
+      description: "어떻게 개선하면 좋을까요?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: tasks
+    attributes:
+      label: "작업 내용"
+      description: "구체적인 작업 목록"
+      value: |
+        - [ ]
+        - [ ]
+        - [ ]
+    validations:
+      required: false
